@@ -1,0 +1,257 @@
+/* styles.css: Estilo principal para la página web */
+
+/* Variables de colores */
+:root {
+  --primary-color: #4d007d; /* Morado principal */
+  --secondary-color: #a189d4; /* Morado claro */
+  --background-color: #ffffff; /* Blanco */
+  --text-color: #000000; /* Negro */
+}
+
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Encabezado */
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--background-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Sección de productos */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  background-color: var(--background-color);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--primary-color);
+}
+
+.product button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Sección de carrito */
+#cart {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cart-item button:hover {
+  background-color: var(--secondary-color);
+}
+
+#confirm-purchase-btn {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  display: none; /* Oculto por defecto */
+}
+
+#confirm-purchase-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Formulario de contacto */
+form {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Testimonios */
+#reviews {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#reviews blockquote {
+  display: none;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+#reviews blockquote.active {
+  display: block;
+}
+
+#reviews cite {
+  display: block;
+  margin-top: 10px;
+  color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  #products {
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .product h3 {
+    font-size: 18px;
+  }
+}

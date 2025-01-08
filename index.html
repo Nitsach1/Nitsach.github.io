@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda oficial de Nitsach T-Shirts, moda única y moderna">
+  <title>Nitsach</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Nitsach</h1>
+    <nav>
+      <a href="#home">Inicio</a>
+      <a href="#products">Productos</a>
+      <a href="#cart">Carrito <span id="cart-badge" style="display:none;">0</span></a>
+      <a href="#contact">Contacto</a>
+      <a href="#reviews">Testimonios</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="container">
+    <!-- Sección de inicio -->
+    <section id="home">
+      <h2>Bienvenidos a Nitsach</h2>
+      <p>Especializados en diseñar tu estilo para que luzcas genial 🙂‍↕️✨, nos encargamos de ilustrar tus gustos sobre las poleras.
+No dudes en mandarnos tus imágenes o ideas para personalizar tus poleras 💜
+        Nos encontramos en la ciudad de Santa Cruz de la Sierra 🇳🇬 y hacemos envios a nivel nacional 😊.
+      Puedes encontrarnos en tiktok como: @Nitsach</p>
+      <img src="logo.png" alt="Logo Nitsach T-Shirts" style="max-width: 300px;">
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="products">
+      <h2>Nuestros Productos</h2>
+      <div class="product">
+        <img src="product1.jpg" alt="Producto 1">
+        <h3>Alien Gangsta</h3>
+        <p>Precio: 80.00bs</p>
+        <button onclick="addToCart(1)">Añadir al Carrito</button>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Producto 2">
+        <h3>Mario theft auto</h3>
+        <p>Precio: 80.00bs</p>
+        <button onclick="addToCart(2)">Añadir al Carrito</button>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="Producto 3">
+        <h3>Mario Samurai</h3>
+        <p>Precio: 80.00bs</p>
+        <button onclick="addToCart(3)">Añadir al Carrito</button>
+      </div>
+    </section>
+
+    <!-- Sección del carrito -->
+    <section id="cart">
+      <h2>Carrito de Compras</h2>
+      <div id="cart-items">
+        <!-- Los productos añadidos se mostrarán aquí -->
+      </div>
+      <button id="confirm-purchase-btn" onclick="confirmPurchase()">Confirmar Compra</button>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contact">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section id="reviews">
+      <h2>Testimonios</h2>
+      <blockquote class="active">
+        <p>"Las camisetas de Nitsach son increíbles. ¡Amo los diseños!"</p>
+        <cite>- Cliente Satisfecho</cite>
+      </blockquote>
+      <blockquote>
+        <p>"La calidad es excelente, y el envío fue muy rápido."</p>
+        <cite>- María G.</cite>
+      </blockquote>
+      <blockquote>
+        <p>"Definitivamente compraré más camisetas. ¡Super recomendado!"</p>
+        <cite>- Juan P.</cite>
+      </blockquote>
+    </section>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Nitsach. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
