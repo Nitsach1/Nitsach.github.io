@@ -12,7 +12,7 @@ function redirectToWhatsApp(productId) {
 
   if (product) {
     // Número de teléfono (reemplázalo con tu número de WhatsApp)
-    const phoneNumber = "591XXXXXXXXX"; // Cambiar este número por el tuyo
+    const phoneNumber = "59160981924"; // Cambiar este número por el tuyo
 
     // Generar mensaje dinámico
     const message = encodeURIComponent(
