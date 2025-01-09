@@ -1,8 +1,8 @@
 // Función para redirigir a WhatsApp con información del producto
 function redirectToWhatsApp(productId) {
   const products = [
-    { id: 1, name: "Camiseta Clásica", price: 20.00 },
-    { id: 2, name: "Camiseta Estampada", price: 25.00 },
+    { id: 1, name: "Alien Gansta", price: 80.00 },
+    { id: 2, name: "Mario theft auto", price: 80.00 },
     { id: 3, name: "Mario Samurai", price: 80.00 },
     { id: 4, name: "Blooming 💙", price: 120.00 }
   ];
