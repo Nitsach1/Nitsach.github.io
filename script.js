@@ -4,7 +4,8 @@ function redirectToWhatsApp(productId) {
     { id: 1, name: "Alien Gansta", price: 80.00 },
     { id: 2, name: "Mario theft auto", price: 80.00 },
     { id: 3, name: "Mario Samurai", price: 80.00 },
-    { id: 4, name: "Blooming 💙", price: 120.00 }
+    { id: 4, name: "Blooming 💙", price: 120.00 },
+    { id: 5, name: "Poleras Personalizadas ✨", price: Cotiza el precio }
   ];
 
   // Buscar el producto por su ID
