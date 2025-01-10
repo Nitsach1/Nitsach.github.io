@@ -5,7 +5,7 @@ function redirectToWhatsApp(productId) {
     { id: 2, name: "Mario theft auto", price: 80.00 },
     { id: 3, name: "Mario Samurai", price: 80.00 },
     { id: 4, name: "Blooming 💙", price: 120.00 },
-    { id: 5, name: "Polera Personalizadas ✨", price: Cotizar el precio }
+    { id: 5, name: "Polera Personalizadas ✨", price: cuanto lo hace }
   ];
 
   // Buscar el producto por su ID
